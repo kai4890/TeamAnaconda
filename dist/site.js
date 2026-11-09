@@ -86,7 +86,7 @@ const layers = [...scene.querySelectorAll('[data-depth]')].map(element => ({
   element, depth: Number(element.dataset.depth),
 }));
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const compactScreen = window.matchMedia('(max-width: 640px)');
+const compactScreen = window.matchMedia('(max-width: 740px)');
 let frame = 0;
 let shift = 0;
 let target = 0;
@@ -104,7 +104,7 @@ function animateDepth() {
 function updateDepth() {
   if (reducedMotion.matches) return;
   const maxTravel = Math.min(scene.offsetHeight, 660);
-  const mobileScale = compactScreen.matches ? 0.58 : 1;
+  const mobileScale = compactScreen.matches ? 0.32 : 1;
   const next = Math.max(0, Math.min(window.scrollY, maxTravel)) * mobileScale;
   if (target === next) return;
   target = next;
