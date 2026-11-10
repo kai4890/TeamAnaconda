@@ -95,8 +95,7 @@ nav a:hover,.footer a:hover{color:var(--accent)}
 .day-panel dt{color:#ffa18f;white-space:nowrap;font-size:.8rem;font-variant-numeric:tabular-nums;font-weight:800}
 .day-panel dd,.hours dd{text-align:right;font-size:.82rem}
 .coach-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(.8rem,2vw,1.5rem);align-items:start}
-.coach img{width:100%;aspect-ratio:1.53;object-fit:cover;object-position:center 36%;filter:saturate(.76)}
-.coach:first-child img{object-position:center 27%}
+.coach img{width:100%;aspect-ratio:1;object-fit:cover}
 .coach-content{padding-top:.85rem}
 .coach details{margin-top:.8rem;border-top:1px solid var(--line);font-size:.81rem}
 .coach summary{display:flex;align-items:center;justify-content:space-between;gap:.35rem;cursor:pointer;list-style:none;padding:.65rem 0;color:#ffa18f;font-weight:800}
@@ -179,9 +178,8 @@ address a:hover,.visit-note a:hover{text-decoration:underline}
   .program-body h3{font-size:1.9rem}
   .program-body>p:not(.micro){font-size:.9rem}
   .coach-grid,.review-grid{grid-template-columns:1fr}
-  .coach{display:grid;grid-template-columns:33% minmax(0,1fr)}
-  .coach img{height:100%;min-height:140px;aspect-ratio:unset}
-  .coach:nth-child(2) img{object-position:50% 25%}
+  .coach{display:grid;grid-template-columns:33% minmax(0,1fr);align-items:start;gap:.85rem}
+  .coach-content{padding-top:0}
   .facility-grid .video-wrap{order:2}
   .price-grid{grid-template-columns:1fr;gap:0}
   .price-grid article{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:.35rem .85rem}
