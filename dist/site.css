@@ -2,7 +2,7 @@
 @font-face{font-family:Manrope;src:url("/assets/manrope.woff2") format("woff2");font-weight:400 800;font-display:swap}
 :root{
   color-scheme:dark;--ink:#10100f;--deep:#0b0b0a;--panel:#181816;--line:#383631;
-  --paper:#f6f1e9;--muted:#bdb8ae;--accent:#fa0301;--accent-dark:#a60201;
+  --paper:#f6f1e9;--muted:#bdb8ae;--accent:#df514f;--accent-dark:#a23735;
   --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--body:Manrope,system-ui,sans-serif;
   --space:clamp(1.25rem,4.9vw,5.2rem);--shell:1280px
 }
@@ -40,7 +40,7 @@ nav{display:flex;gap:clamp(.95rem,2.25vw,2.25rem);align-items:center}
 nav a{color:#dfdad0;font-size:.8rem;font-weight:800;transition:color .18s;white-space:nowrap}
 nav a:hover,.footer a:hover{color:var(--accent)}
 .button{min-height:48px;padding:.72rem 1.16rem;display:inline-flex;align-items:center;justify-content:center;gap:.72rem;background:var(--accent);color:#15100d;font-size:.89rem;font-weight:800;line-height:1.25;border:1px solid var(--accent);transition:background .2s,color .2s,border .2s;text-align:center}
-.button:hover{background:#ff332f;border-color:#ff332f}
+.button:hover{background:#e86a68;border-color:#e86a68}
 .outline{background:transparent;color:var(--paper);border-color:#77716a}
 .outline:hover{background:var(--paper);color:var(--deep);border-color:var(--paper)}
 .nav-cta{min-height:40px;padding:.59rem 1rem}
